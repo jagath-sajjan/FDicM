@@ -1,0 +1,9 @@
+dist/
+release/
+fdicm
+fdicm.exe
+.fdicm_cache/
+history.json
+history_v2.json
+cache_*.json
+go.sum
