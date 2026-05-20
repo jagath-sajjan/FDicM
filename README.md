@@ -1,87 +1,64 @@
 # FDicM
 
-Blazing fast responsive split pane terminal dictionary app engine built with Go and Bubble Tea
+> Blazing fast responsive split pane terminal dictionary app engine built with Go and Bubble Tea
 
-## Core Architecture Design Overview
+---
 
-FDicM delivers a localized cross platform dictionary application interface designed directly for keyboard driven terminal environments The framework operates with zero external dynamic runtime link dependencies utilizing a dual panel view system to maximize text layout visibility and parsing efficiency while reading raw lexeme metadata definitions
+## Architecture
 
-## Technical Performance Specifications
+FDicM delivers a localized cross platform dictionary application interface designed directly for keyboard driven terminal environments. The framework operates with zero external dynamic runtime link dependencies, utilizing a dual panel view system to maximize text layout visibility and parsing efficiency while reading raw lexeme metadata definitions.
 
-### High Efficiency View Routing
-Responsive layout computations handle terminal window resizing operations dynamically to adjust viewport heights cleanly without text clipping artifacts
+---
 
-### Dual Core Data Resolution Strategy
-Primary data lookup requests execute parallel network queries targeting cloud vocabulary endpoints If network dropouts or connection timeouts occur the engine fallback state routes lookup requests through a local compressed dictionary database automatically
+## Performance
 
-### Low Impact System Memory Profiles
-Static memory allocation strategies keep runtime memory usage exceptionally low during intensive vocabulary lookups
+**Responsive Layout Engine**
+Terminal window resizing operations are handled dynamically to adjust viewport heights cleanly without text clipping artifacts.
 
-## Comprehensive Global Navigation Matrix
+**Dual Source Data Resolution**
+Primary lookups execute parallel network queries targeting cloud vocabulary endpoints. On network dropout or timeout, the engine automatically falls back to a local compressed dictionary database.
 
-### Key TAB
-Toggles structural interface focus between the query prompt panel and the primary definition viewport window framework contextually
+**Low Memory Footprint**
+Static memory allocation strategies keep runtime usage exceptionally low during intensive vocabulary lookups.
 
-### Key p
-Signals background synthesis subsystems to process vocal phonetics streaming remote audio samples or executing native system text to speech speech drivers gracefully
+---
 
-### Key v
-Swaps the secondary panel state output stream into a syntax colored javascript object notation visualization map on demand
+## Keybindings
 
-### Key c
-Saves clean alphanumeric string definitions directly into the host machine global desktop clipboard buffer safely
+| Key   | Action                                                                 |
+|-------|------------------------------------------------------------------------|
+| TAB   | Toggle focus between the query prompt and the definition viewport      |
+| p     | Stream remote audio pronunciation or invoke native text to speech      |
+| v     | Toggle syntax colored JSON visualization in the secondary panel        |
+| c     | Copy the clean definition string to the system clipboard               |
+| q     | Close the active viewport or terminate the application                 |
+| ESC   | Exit secondary panels or interrupt foreground rendering loops          |
+| j     | Scroll down within the focused definition viewport                     |
+| k     | Scroll up within the focused definition viewport                       |
 
-### Key q
-Terminates active viewport display configurations or closes the main execution cycle thread cleanly
+---
 
-### Key ESC
-Interrupts foreground rendering loops or exits secondary operational panels back to safe base menus
+## Usage
 
-### Key j
-Triggers contextual viewport down scrolling operations smoothly when panel focus metrics target definition boxes
-
-### Key k
-Triggers contextual viewport up scrolling operations smoothly when panel focus metrics target definition boxes
-
-## Detailed Usage Instruction Framework
-
-### Main Interface Initialization
-Execute the default build output directly from your shell environment to initialize the core interface dashboard
+**Launch**
 
     fdicm
 
-### Prefix Query Filtering
-Narrow down multi definition responses instantly by specifying grammatical lexical structures using prefix context commands directly inside the main terminal prompt box
+**Filter by word class**
 
     :noun interface
-
     :verb program
 
-### Version Diagnostic Inquiries
-Inspect explicit build meta strings compiled binaries and version tags cleanly without mounting the full visual rendering core engine loop
+**Check version**
 
     fdicm --version
 
-### Central Package Management Setup
+---
 
-#### Target Infrastructure Pull
-Tap the centralized code management distribution channel directly from your terminal console setup
+## Installation
+
+**macOS via Homebrew**
 
     brew tap jagath-sajjan/tap
-
-#### Local Target Provisioning
-Download compile map security checksum verification profiles and lock binaries into system global execution paths completely automated
-
     brew install fdicm
-
-
-### Linux Debian Ubuntu Hardware Target Setup
-Download the standalone compiled deb package asset directly from the release storage block and clear verification layers manually
-
-    sudo dpkg -i fdicm_1.0.0_amd64.deb
-
-### Universal Linux Snap Environment Provisioning
-Install across any system distribution profile tracking the automated canonical stable snap channel
-
-    sudo snap install fdicm
 
