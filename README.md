@@ -74,3 +74,14 @@ Download compile map security checksum verification profiles and lock binaries i
 
     brew install fdicm
 
+
+### Linux Debian Ubuntu Hardware Target Setup
+Download the standalone compiled deb package asset directly from the release storage block and clear verification layers manually
+
+    sudo dpkg -i fdicm_1.0.0_amd64.deb
+
+### Universal Linux Snap Environment Provisioning
+Install across any system distribution profile tracking the automated canonical stable snap channel
+
+    sudo snap install fdicm
+
